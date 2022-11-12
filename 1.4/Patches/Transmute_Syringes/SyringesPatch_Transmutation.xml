@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Psyfocus Syringes</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationTest">
+					<xpath>/Defs/RecipeDef[@Name = "TransmuteAntiBase"]</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef ParentName="TransmuteAntiBase">
+							<defName>Transmute_PsyfocusSyringe</defName>
+							<label>transmute psyfocus syringe x10</label>
+							<description>Transmute anti-matter into psyfocus syringe.</description>
+							<jobString>Transmuting psyfocus syringe.</jobString>
+							<products>
+							  <PsyfocusSyringe>10</PsyfocusSyringe>
+							</products>
+							<researchPrerequisite>TransmutePsychic</researchPrerequisite>
+						</RecipeDef>
+						<RecipeDef ParentName="TransmuteAntiBase">
+							<defName>Transmute_NeuralSyringe</defName>
+							<label>transmute neural cooling syringe x10</label>
+							<description>Transmute anti-matter into neural cooling syringe.</description>
+							<jobString>Transmuting neural cooling syringe.</jobString>
+							<products>
+							  <NeuralSyringe>10</NeuralSyringe>
+							</products>
+							<researchPrerequisite>TransmutePsychic</researchPrerequisite>
+						</RecipeDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

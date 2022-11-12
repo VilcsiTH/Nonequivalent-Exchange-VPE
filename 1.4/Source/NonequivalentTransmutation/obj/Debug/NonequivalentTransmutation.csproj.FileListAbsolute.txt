@@ -1,0 +1,4 @@
+S:\Games\Steam\steamapps\common\RimWorld\Mods\Nonequivalent-Exchange\1.4\Assemblies\NonequivalentTransmutation.dll
+S:\Games\Steam\steamapps\common\RimWorld\Mods\Nonequivalent-Exchange\1.4\Source\NonequivalentTransmutation\obj\Debug\NonequivalentTransmutation.csproj.AssemblyReference.cache
+S:\Games\Steam\steamapps\common\RimWorld\Mods\Nonequivalent-Exchange\1.4\Source\NonequivalentTransmutation\obj\Debug\NonequivalentTransmutation.csproj.CoreCompileInputs.cache
+S:\Games\Steam\steamapps\common\RimWorld\Mods\Nonequivalent-Exchange\1.4\Source\NonequivalentTransmutation\obj\Debug\NonequivalentTransmutation.dll

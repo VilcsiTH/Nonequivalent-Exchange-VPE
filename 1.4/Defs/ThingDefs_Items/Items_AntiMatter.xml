@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <!--Anti-matter increases attributes by 70.58823529411765-->
+  <ThingDef ParentName="ResourceBase">
+    <defName>AntiMatter</defName>
+    <label>anti-matter</label>
+    <description>Matter made of antiparticles. Looking at it makes you feel weird.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/AntiMatter</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <soundInteract>ChunkRock_Drop</soundInteract>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <statBases>
+      <MarketValue>0</MarketValue>
+      <Mass>8.8</Mass>
+    </statBases>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <tradeability>None</tradeability>
+    <deepCommonality>0</deepCommonality>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>false</smeltable>
+    <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+  </ThingDef>
+</Defs>

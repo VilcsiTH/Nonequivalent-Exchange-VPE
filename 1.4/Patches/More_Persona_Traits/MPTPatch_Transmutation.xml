@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>More Persona Traits</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationTest">
+					<xpath>/Defs/RecipeDef[@Name = "TransmuteAntiBase"]</xpath>
+				</li>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs</xpath>
+					<value>
+						<RecipeDef ParentName="TransmuteAntiBase">
+							<defName>Transmute_BladelinkUncoder</defName>
+							<label>transmute persona bond effector x10</label>
+							<description>Transmute anti-matter into persona bond effector.</description>
+							<jobString>Transmuting persona bond effector.</jobString>
+							<products>
+							  <MPT_BladelinkUncoder>10</MPT_BladelinkUncoder>
+							</products>
+							<researchPrerequisite>TransmuteExotic</researchPrerequisite>
+						</RecipeDef>
+						<RecipeDef ParentName="TransmuteAntiBase">
+							<defName>Transmute_BladelinkReroller</defName>
+							<label>transmute persona reformat effector x10</label>
+							<description>Transmute anti-matter into persona reformat effector.</description>
+							<jobString>Transmuting persona reformat effector.</jobString>
+							<products>
+							  <MPT_BladelinkReroller>10</MPT_BladelinkReroller>
+							</products>
+							<researchPrerequisite>TransmuteExotic</researchPrerequisite>
+						</RecipeDef>
+						<RecipeDef ParentName="TransmuteAntiBase">
+						  <defName>Transmute_BladelinkExalt</defName>
+						  <label>transmute persona extension effector x10</label>
+						  <description>Transmute anti-matter into persona extension effector.</description>
+						  <jobString>Transmuting persona extension effector.</jobString>
+						  <products>
+							<MPT_BladelinkExalt>10</MPT_BladelinkExalt>
+						  </products>
+						  <researchPrerequisite>TransmuteExotic</researchPrerequisite>
+						</RecipeDef>
+						<RecipeDef ParentName="TransmuteAntiBase">
+						  <defName>Transmute_BladelinkAnnul</defName>
+						  <label>transmute persona reduction effector x10</label>
+						  <description>Transmute anti-matter into persona reduction effector.</description>
+						  <jobString>Transmuting persona reduction effector.</jobString>
+						  <products>
+							<MPT_BladelinkAnnul>10</MPT_BladelinkAnnul>
+						  </products>
+						  <researchPrerequisite>TransmuteExotic</researchPrerequisite>
+						</RecipeDef>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

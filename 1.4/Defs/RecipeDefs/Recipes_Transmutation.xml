@@ -1,0 +1,2151 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RecipeDef Name="TransmuteBase" Abstract="True">
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>75</workAmount>
+    <recipeUsers>
+      <li>TableTransmutation</li>
+      <li>TableDarkMatter</li>
+      <li>TableAntiMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DarkMatter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DarkMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef Name="TransmuteDarkBase" Abstract="True">
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>300</workAmount>
+    <recipeUsers>
+      <li>TableDarkMatter</li>
+      <li>TableAntiMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AntiMatter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AntiMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef Name="TransmuteAntiBase" Abstract="True">
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>1200</workAmount>
+    <recipeUsers>
+      <li>TableAntiMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AntiMatter</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AntiMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  
+    <RecipeDef Name="CookBase" Abstract="True">
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>75</workAmount>
+    <recipeUsers>
+      <li>StoveDarkMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DarkMatter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DarkMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef Name="CookDarkBase" Abstract="True">
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>300</workAmount>
+    <recipeUsers>
+      <li>StoveDarkMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AntiMatter</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AntiMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef Name="CookAntiBase" Abstract="True">
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <workAmount>1200</workAmount>
+    <recipeUsers>
+      <li>StoveDarkMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AntiMatter</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>AntiMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Transmute_DarkMatter</defName>
+    <label>transmute dark matter</label>
+    <description>Transmute raw resources into dark matter.</description>
+    <jobString>Transmuting dark matter.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>75</workAmount>
+    <recipeUsers>
+      <li>TableTransmutation</li>
+      <li>TableDarkMatter</li>
+      <li>TableAntiMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>ResourcesRaw</li>
+          </categories>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>ResourcesRaw</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>DarkMatter</li>
+        <li>AntiMatter</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <DarkMatter>1</DarkMatter>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Transmute_DarkMatterBulk</defName>
+    <label>transmute dark matter x75</label>
+    <description>Transmute raw resources into dark matter.</description>
+    <jobString>Transmuting dark matter.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>75</workAmount>
+    <recipeUsers>
+      <li>TableTransmutation</li>
+      <li>TableDarkMatter</li>
+      <li>TableAntiMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <categories>
+            <li>ResourcesRaw</li>
+          </categories>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <categories>
+        <li>ResourcesRaw</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>DarkMatter</li>
+        <li>AntiMatter</li>
+      </disallowedThingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <DarkMatter>75</DarkMatter>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Transmute_AntiMatter</defName>
+    <label>transmute anti-matter</label>
+    <description>Transmute dark matter into anti-matter.</description>
+    <jobString>Transmuting anti-matter.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>300</workAmount>
+    <recipeUsers>
+      <li>TableDarkMatter</li>
+      <li>TableAntiMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DarkMatter</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DarkMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AntiMatter>1</AntiMatter>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Transmute_AntiMatterBulk</defName>
+    <label>transmute anti-matter x75</label>
+    <description>Transmute dark matter into anti-matter.</description>
+    <jobString>Transmuting anti-matter.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>300</workAmount>
+    <recipeUsers>
+      <li>TableDarkMatter</li>
+      <li>TableAntiMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DarkMatter</li>
+          </thingDefs>
+        </filter>
+        <count>5625</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DarkMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <AntiMatter>75</AntiMatter>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Gold</defName>
+    <label>transmute gold x500</label>
+    <description>Transmute dark matter into gold.</description>
+    <jobString>Transmuting gold.</jobString>
+    <products>
+      <Gold>500</Gold>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Jade</defName>
+    <label>transmute jade x75</label>
+    <description>Transmute dark matter into jade.</description>
+    <jobString>Transmuting jade.</jobString>
+    <products>
+      <Jade>75</Jade>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Plasteel</defName>
+    <label>transmute plasteel x75</label>
+    <description>Transmute dark matter into plasteel.</description>
+    <jobString>Transmuting plasteel.</jobString>
+    <products>
+      <Plasteel>75</Plasteel>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Silver</defName>
+    <label>transmute silver x500</label>
+    <description>Transmute dark matter into silver.</description>
+    <jobString>Transmuting silver.</jobString>
+    <products>
+      <Silver>500</Silver>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Steel</defName>
+    <label>transmute steel x75</label>
+    <description>Transmute dark matter into steel.</description>
+    <jobString>Transmuting steel.</jobString>
+    <products>
+      <Steel>75</Steel>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Uranium</defName>
+    <label>transmute uranium x75</label>
+    <description>Transmute dark matter into uranium.</description>
+    <jobString>Transmuting uranium.</jobString>
+    <products>
+      <Uranium>75</Uranium>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Wood</defName>
+    <label>transmute wood x75</label>
+    <description>Transmute dark matter into wood logs.</description>
+    <jobString>Transmuting wood.</jobString>
+    <products>
+      <WoodLog>75</WoodLog>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Chemfuel</defName>
+    <label>transmute chemfuel x150</label>
+    <description>Transmute anti-matter into chemfuel.</description>
+    <jobString>Transmuting chemfuel.</jobString>
+    <products>
+      <Chemfuel>150</Chemfuel>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Component</defName>
+    <label>transmute component x50</label>
+    <description>Transmute anti-matter into component.</description>
+    <jobString>Transmuting component.</jobString>
+    <products>
+      <ComponentIndustrial>50</ComponentIndustrial>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_AdvancedComponent</defName>
+    <label>transmute advanced component x50</label>
+    <description>Transmute anti-matter into advanced component.</description>
+    <jobString>Transmuting advanced component.</jobString>
+    <products>
+      <ComponentSpacer>50</ComponentSpacer>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Granite</defName>
+    <label>transmute granite blocks x75</label>
+    <description>Transmute dark matter into granite blocks.</description>
+    <jobString>Transmuting granite.</jobString>
+    <products>
+      <BlocksGranite>75</BlocksGranite>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Limestone</defName>
+    <label>transmute limestone blocks x75</label>
+    <description>Transmute dark matter into limestone blocks.</description>
+    <jobString>Transmuting limestone.</jobString>
+    <products>
+      <BlocksLimestone>75</BlocksLimestone>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Marble</defName>
+    <label>transmute marble blocks x75</label>
+    <description>Transmute dark matter into marble blocks.</description>
+    <jobString>Transmuting marble.</jobString>
+    <products>
+      <BlocksMarble>75</BlocksMarble>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Sandstone</defName>
+    <label>transmute sandstone blocks x75</label>
+    <description>Transmute dark matter into sandstone blocks.</description>
+    <jobString>Transmuting sandstone.</jobString>
+    <products>
+      <BlocksSandstone>75</BlocksSandstone>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Slate</defName>
+    <label>transmute slate blocks x75</label>
+    <description>Transmute dark matter into slate blocks.</description>
+    <jobString>Transmuting slate.</jobString>
+    <products>
+      <BlocksSlate>75</BlocksSlate>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteBase">
+    <defName>Transmute_Dye</defName>
+    <label>transmute dye x75</label>
+    <description>Transmute dark matter into dye.</description>
+    <jobString>Transmuting dye.</jobString>
+    <products>
+      <Dye>75</Dye>
+    </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookBase">
+    <defName>Transmute_Hops</defName>
+    <label>transmute hops x75</label>
+    <description>Transmute dark matter into hops.</description>
+    <jobString>Transmuting hops.</jobString>
+    <products>
+      <RawHops>75</RawHops>
+    </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookBase">
+    <defName>Transmute_Psychoid</defName>
+    <label>transmute psychoid leaves x75</label>
+    <description>Transmute dark matter into psychoid leaves.</description>
+    <jobString>Transmuting psychoid leaves.</jobString>
+    <products>
+      <PsychoidLeaves>75</PsychoidLeaves>
+    </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookBase">
+    <defName>Transmute_Smokeleaf</defName>
+    <label>transmute smokeleaf leaves x75</label>
+    <description>Transmute dark matter into smokeleaf leaves.</description>
+    <jobString>Transmuting smokeleaf leaves.</jobString>
+    <products>
+      <SmokeleafLeaves>75</SmokeleafLeaves>
+    </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_Ambrosia</defName>
+    <label>transmute ambrosia x400</label>
+    <description>Transmute anti-matter into ambrosia.</description>
+    <jobString>Transmuting ambrosia.</jobString>
+    <products>
+      <Ambrosia>400</Ambrosia>
+    </products>
+    <researchPrerequisite>TransmuteDrug</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookAntiBase">
+    <defName>Transmute_Beer</defName>
+    <label>transmute beer x25</label>
+    <description>Transmute anti-matter into beer.</description>
+    <jobString>Transmuting beer.</jobString>
+    <products>
+      <Beer>25</Beer>
+    </products>
+    <researchPrerequisite>TransmuteDrug</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Flake</defName>
+    <label>transmute flake x400</label>
+    <description>Transmute anti-matter into flake.</description>
+    <jobString>Transmuting flake.</jobString>
+    <products>
+      <Flake>400</Flake>
+    </products>
+    <researchPrerequisite>TransmuteDrug</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Gojuice</defName>
+    <label>transmute go-juice x400</label>
+    <description>Transmute anti-matter into go-juice.</description>
+    <jobString>Transmuting go-juice.</jobString>
+    <products>
+      <GoJuice>400</GoJuice>
+    </products>
+    <researchPrerequisite>TransmuteDrug</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Penoxycyline</defName>
+    <label>transmute penoxycyline x400</label>
+    <description>Transmute anti-matter into penoxycyline.</description>
+    <jobString>Transmuting penoxycyline.</jobString>
+    <products>
+      <Penoxycyline>400</Penoxycyline>
+    </products>
+    <researchPrerequisite>TransmuteMedical</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Tea</defName>
+    <label>transmute psychite tea x400</label>
+    <description>Transmute anti-matter into psychite tea.</description>
+    <jobString>Transmuting psychite tea.</jobString>
+    <products>
+      <PsychiteTea>400</PsychiteTea>
+    </products>
+    <researchPrerequisite>TransmuteDrug</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Joint</defName>
+    <label>transmute smokeleaf joint x400</label>
+    <description>Transmute anti-matter into smokeleaf joint.</description>
+    <jobString>Transmuting smokeleaf joint.</jobString>
+    <products>
+      <SmokeleafJoint>400</SmokeleafJoint>
+    </products>
+    <researchPrerequisite>TransmuteDrug</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Luciferium</defName>
+    <label>transmute luciferium x400</label>
+    <description>Transmute anti-matter into luciferium.</description>
+    <jobString>Transmuting luciferium.</jobString>
+    <products>
+      <Luciferium>400</Luciferium>
+    </products>
+    <researchPrerequisite>TransmuteMedical</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Wakeup</defName>
+    <label>transmute wake-up x400</label>
+    <description>Transmute anti-matter into wake-up.</description>
+    <jobString>Transmuting wake-up.</jobString>
+    <products>
+      <WakeUp>400</WakeUp>
+    </products>
+    <researchPrerequisite>TransmuteDrug</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Wort</defName>
+    <label>transmute wort x25</label>
+    <description>Transmute anti-matter into wort.</description>
+    <jobString>Transmuting wort.</jobString>
+    <products>
+      <Wort>25</Wort>
+    </products>
+    <researchPrerequisite>TransmuteDrug</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Yayo</defName>
+    <label>transmute yayo x400</label>
+    <description>Transmute anti-matter into yayo.</description>
+    <jobString>Transmuting yayo.</jobString>
+    <products>
+      <Yayo>400</Yayo>
+    </products>
+    <researchPrerequisite>TransmuteDrug</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Gauranlen</defName>
+    <label>transmute gauranlen seed x75</label>
+    <description>Transmute anti-matter into gauranlen seed.</description>
+    <jobString>Transmuting gauranlen seed.</jobString>
+    <products>
+      <GauranlenSeed>1</GauranlenSeed>
+    </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Herbal</defName>
+    <label>transmute herbal medicine x25</label>
+    <description>Transmute anti-matter into herbal medicine.</description>
+    <jobString>Transmuting herbal medicine.</jobString>
+    <products>
+      <MedicineHerbal>25</MedicineHerbal>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Medicine</defName>
+    <label>transmute medicine x25</label>
+    <description>Transmute anti-matter into medicine.</description>
+    <jobString>Transmuting medicine.</jobString>
+    <products>
+      <MedicineIndustrial>25</MedicineIndustrial>
+    </products>
+    <researchPrerequisite>TransmuteMedicine</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Glitterworld</defName>
+    <label>transmute glitterworld medicine x25</label>
+    <description>Transmute anti-matter into glitterworld medicine.</description>
+    <jobString>Transmuting glitterworld medicine.</jobString>
+    <products>
+      <MedicineUltratech>25</MedicineUltratech>
+    </products>
+    <researchPrerequisite>TransmuteMedicine</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Neutroamine</defName>
+    <label>transmute neutroamine x150</label>
+    <description>Transmute anti-matter into neutroamine.</description>
+    <jobString>Transmuting neutroamine.</jobString>
+    <products>
+      <Neutroamine>150</Neutroamine>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Healer</defName>
+    <label>transmute healer mech serum x10</label>
+    <description>Transmute anti-matter into healer mech serum.</description>
+    <jobString>Transmuting healer mech serum.</jobString>
+    <products>
+      <MechSerumHealer>10</MechSerumHealer>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Resurrector</defName>
+    <label>transmute resurrector mech serum x10</label>
+    <description>Transmute anti-matter into resurrector mech serum.</description>
+    <jobString>Transmuting resurrector mech serum.</jobString>
+    <products>
+      <MechSerumResurrector>10</MechSerumResurrector>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_Agave</defName>
+    <label>transmute agave fruit x75</label>
+    <description>Transmute anti-matter into agave fruit.</description>
+    <jobString>Transmuting agave fruit.</jobString>
+    <products>
+      <RawAgave>75</RawAgave>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_Berries</defName>
+    <label>transmute berries x75</label>
+    <description>Transmute anti-matter into berries.</description>
+    <jobString>Transmuting berries.</jobString>
+    <products>
+      <RawBerries>75</RawBerries>
+    </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_Corn</defName>
+    <label>transmute corn x75</label>
+    <description>Transmute anti-matter into corn.</description>
+    <jobString>Transmuting corn.</jobString>
+    <products>
+      <RawCorn>75</RawCorn>
+    </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_Hay</defName>
+    <label>transmute hay x75</label>
+    <description>Transmute anti-matter into hay.</description>
+    <jobString>Transmuting hay.</jobString>
+    <products>
+      <Hay>75</Hay>
+    </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_Potato</defName>
+    <label>transmute potatoes x75</label>
+    <description>Transmute anti-matter into potatoes.</description>
+    <jobString>Transmuting potatoes.</jobString>
+    <products>
+      <RawPotatoes>75</RawPotatoes>
+    </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_Fungus</defName>
+    <label>transmute raw fungus x75</label>
+    <description>Transmute anti-matter into raw fungus.</description>
+    <jobString>Transmuting raw fungus.</jobString>
+    <products>
+      <RawFungus>75</RawFungus>
+    </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_Rice</defName>
+    <label>transmute rice x75</label>
+    <description>Transmute anti-matter into rice.</description>
+    <jobString>Transmuting rice.</jobString>
+    <products>
+      <RawRice>75</RawRice>
+    </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatAlpaca</defName>
+    <label>transmute alpaca meat x75</label>
+    <description>Transmute anti-matter into alpaca meat.</description>
+    <jobString>Transmuting alpaca meat.</jobString>
+    <products>
+      <Meat_Alpaca>75</Meat_Alpaca>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatAlphabeaver</defName>
+    <label>transmute alphabeaver meat x75</label>
+    <description>Transmute anti-matter into alphabeaver meat.</description>
+    <jobString>Transmuting alphabeaver meat.</jobString>
+    <products>
+      <Meat_Alpaca>75</Meat_Alpaca>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatBear</defName>
+    <label>transmute bear meat x75</label>
+    <description>Transmute anti-matter into bear meat.</description>
+    <jobString>Transmuting bear meat.</jobString>
+    <products>
+      <Meat_Bear_Grizzly>75</Meat_Bear_Grizzly>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_Beef</defName>
+    <label>transmute beef x75</label>
+    <description>Transmute anti-matter into beef.</description>
+    <jobString>Transmuting beef.</jobString>
+    <products>
+      <Meat_Cow>75</Meat_Cow>
+    </products>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatBird</defName>
+    <label>transmute bird meat x75</label>
+    <description>Transmute anti-matter into bird meat.</description>
+    <jobString>Transmuting bird meat.</jobString>
+    <products>
+      <Meat_Cassowary>75</Meat_Cassowary>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatBison</defName>
+    <label>transmute bison meat x75</label>
+    <description>Transmute anti-matter into bison meat.</description>
+    <jobString>Transmuting bison meat.</jobString>
+    <products>
+      <Meat_Bison>75</Meat_Bison>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatBoomalope</defName>
+    <label>transmute boomalope meat x75</label>
+    <description>Transmute anti-matter into boomalope meat.</description>
+    <jobString>Transmuting boomalope meat.</jobString>
+    <products>
+      <Meat_Boomalope>75</Meat_Boomalope>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatBoomrat</defName>
+    <label>transmute boomrat meat x75</label>
+    <description>Transmute anti-matter into boomrat meat.</description>
+    <jobString>Transmuting boomrat meat.</jobString>
+    <products>
+      <Meat_Boomrat>75</Meat_Boomrat>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatCapybara</defName>
+    <label>transmute capybara meat x75</label>
+    <description>Transmute anti-matter into capybara meat.</description>
+    <jobString>Transmuting capybara meat.</jobString>
+    <products>
+      <Meat_Capybara>75</Meat_Capybara>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatCaribou</defName>
+    <label>transmute caribou meat x75</label>
+    <description>Transmute anti-matter into caribou meat.</description>
+    <jobString>Transmuting caribou meat.</jobString>
+    <products>
+      <Meat_Caribou>75</Meat_Caribou>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatCat</defName>
+    <label>transmute cat meat x75</label>
+    <description>Transmute anti-matter into cat meat.</description>
+    <jobString>Transmuting cat meat.</jobString>
+    <products>
+      <Meat_Cat>75</Meat_Cat>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatChicken</defName>
+    <label>transmute chicken meat x75</label>
+    <description>Transmute anti-matter into chicken meat.</description>
+    <jobString>Transmuting chicken meat.</jobString>
+    <products>
+      <Meat_Chicken>75</Meat_Chicken>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatChinchilla</defName>
+    <label>transmute chinchilla meat x75</label>
+    <description>Transmute anti-matter into chinchilla meat.</description>
+    <jobString>Transmuting chinchilla meat.</jobString>
+    <products>
+      <Meat_Chinchilla>75</Meat_Chinchilla>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatCobra</defName>
+    <label>transmute cobra meat x75</label>
+    <description>Transmute anti-matter into cobra meat.</description>
+    <jobString>Transmuting cobra meat.</jobString>
+    <products>
+      <Meat_Cobra>75</Meat_Cobra>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatCougar</defName>
+    <label>transmute cougar meat x75</label>
+    <description>Transmute anti-matter into cougar meat.</description>
+    <jobString>Transmuting cougar meat.</jobString>
+    <products>
+      <Meat_Cougar>75</Meat_Cougar>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatDonkey</defName>
+    <label>transmute donkey meat x75</label>
+    <description>Transmute anti-matter into donkey meat.</description>
+    <jobString>Transmuting donkey meat.</jobString>
+    <products>
+      <Meat_Donkey>75</Meat_Donkey>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatDromedary</defName>
+    <label>transmute dromedary meat x75</label>
+    <description>Transmute anti-matter into dromedary meat.</description>
+    <jobString>Transmuting dromedary meat.</jobString>
+    <products>
+      <Meat_Dromedary>75</Meat_Dromedary>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatDuck</defName>
+    <label>transmute duck meat x75</label>
+    <description>Transmute anti-matter into duck meat.</description>
+    <jobString>Transmuting duck meat.</jobString>
+    <products>
+      <Meat_Duck>75</Meat_Duck>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatElephant</defName>
+    <label>transmute elephant meat x75</label>
+    <description>Transmute anti-matter into elephant meat.</description>
+    <jobString>Transmuting elephant meat.</jobString>
+    <products>
+      <Meat_Elephant>75</Meat_Elephant>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatElk</defName>
+    <label>transmute elk meat x75</label>
+    <description>Transmute anti-matter into elk meat.</description>
+    <jobString>Transmuting elk meat.</jobString>
+    <products>
+      <Meat_Elk>75</Meat_Elk>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatFox</defName>
+    <label>transmute fox meat x75</label>
+    <description>Transmute anti-matter into fox meat.</description>
+    <jobString>Transmuting fox meat.</jobString>
+    <products>
+      <Meat_Fox_Fennec>75</Meat_Fox_Fennec>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatGazelle</defName>
+    <label>transmute gazelle meat x75</label>
+    <description>Transmute anti-matter into gazelle meat.</description>
+    <jobString>Transmuting gazelle meat.</jobString>
+    <products>
+      <Meat_Gazelle>75</Meat_Gazelle>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatGoat</defName>
+    <label>transmute goat meat x75</label>
+    <description>Transmute anti-matter into goat meat.</description>
+    <jobString>Transmuting goat meat.</jobString>
+    <products>
+      <Meat_Goat>75</Meat_Goat>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatGuineaPig</defName>
+    <label>transmute guinea pig meat x75</label>
+    <description>Transmute anti-matter into guinea pig meat.</description>
+    <jobString>Transmuting guinea pig meat.</jobString>
+    <products>
+      <Meat_GuineaPig>75</Meat_GuineaPig>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatHare</defName>
+    <label>transmute hare meat x75</label>
+    <description>Transmute anti-matter into hare meat.</description>
+    <jobString>Transmuting hare meat.</jobString>
+    <products>
+      <Meat_Hare>75</Meat_Hare>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatHorse</defName>
+    <label>transmute horse meat x75</label>
+    <description>Transmute anti-matter into horse meat.</description>
+    <jobString>Transmuting horse meat.</jobString>
+    <products>
+      <Meat_Horse>75</Meat_Horse>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatHuman</defName>
+    <label>transmute human meat x75</label>
+    <description>Transmute anti-matter into human meat.</description>
+    <jobString>Transmuting human meat.</jobString>
+    <products>
+      <Meat_Human>75</Meat_Human>
+    </products>
+    <researchPrerequisite>TransmuteHuman</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatHusky</defName>
+    <label>transmute husky meat x75</label>
+    <description>Transmute anti-matter into husky meat.</description>
+    <jobString>Transmuting husky meat.</jobString>
+    <products>
+      <Meat_Husky>75</Meat_Husky>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatIbex</defName>
+    <label>transmute ibex meat x75</label>
+    <description>Transmute anti-matter into ibex meat.</description>
+    <jobString>Transmuting ibex meat.</jobString>
+    <products>
+      <Meat_Ibex>75</Meat_Ibex>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatIguana</defName>
+    <label>transmute iguana meat x75</label>
+    <description>Transmute anti-matter into iguana meat.</description>
+    <jobString>Transmuting iguana meat.</jobString>
+    <products>
+      <Meat_Iguana>75</Meat_Iguana>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatDryad</defName>
+    <label>transmute immature dryad meat x75</label>
+    <description>Transmute anti-matter into immature dryad meat.</description>
+    <jobString>Transmuting immature dryad meat.</jobString>
+    <products>
+      <Meat_Dryad_Basic>75</Meat_Dryad_Basic>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatInsect</defName>
+    <label>transmute insect meat x75</label>
+    <description>Transmute anti-matter into insect meat.</description>
+    <jobString>Transmuting insect meat.</jobString>
+    <products>
+      <Meat_Megaspider>75</Meat_Megaspider>
+    </products>
+    <researchPrerequisite>TransmuteInsect</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatLabrador</defName>
+    <label>transmute labrador retriever meat x75</label>
+    <description>Transmute anti-matter into labrador retriever meat.</description>
+    <jobString>Transmuting labrador retriever meat.</jobString>
+    <products>
+      <Meat_LabradorRetriever>75</Meat_LabradorRetriever>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatLynx</defName>
+    <label>transmute lynx meat x75</label>
+    <description>Transmute anti-matter into lynx meat.</description>
+    <jobString>Transmuting lynx meat.</jobString>
+    <products>
+      <Meat_Lynx>75</Meat_Lynx>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatMegasloth</defName>
+    <label>transmute megasloth meat x75</label>
+    <description>Transmute anti-matter into megasloth meat.</description>
+    <jobString>Transmuting megasloth meat.</jobString>
+    <products>
+      <Meat_Megasloth>75</Meat_Megasloth>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatMonkey</defName>
+    <label>transmute monkey meat x75</label>
+    <description>Transmute anti-matter into monkey meat.</description>
+    <jobString>Transmuting monkey meat.</jobString>
+    <products>
+      <Meat_Monkey>75</Meat_Monkey>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatMuffalo</defName>
+    <label>transmute muffalo meat x75</label>
+    <description>Transmute anti-matter into muffalo meat.</description>
+    <jobString>Transmuting muffalo meat.</jobString>
+    <products>
+      <Meat_Muffalo>75</Meat_Muffalo>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatPanther</defName>
+    <label>transmute panther meat x75</label>
+    <description>Transmute anti-matter into panther meat.</description>
+    <jobString>Transmuting panther meat.</jobString>
+    <products>
+      <Meat_Panther>75</Meat_Panther>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_Pork</defName>
+    <label>transmute pork x75</label>
+    <description>Transmute anti-matter into pork.</description>
+    <jobString>Transmuting pork.</jobString>
+    <products>
+      <Meat_Pig>75</Meat_Pig>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatRaccoon</defName>
+    <label>transmute raccoon meat x75</label>
+    <description>Transmute anti-matter into raccoon meat.</description>
+    <jobString>Transmuting raccoon meat.</jobString>
+    <products>
+      <Meat_Raccoon>75</Meat_Raccoon>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatRat</defName>
+    <label>transmute rat meat x75</label>
+    <description>Transmute anti-matter into rat meat.</description>
+    <jobString>Transmuting rat meat.</jobString>
+    <products>
+      <Meat_Rat>75</Meat_Rat>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatRhinoceros</defName>
+    <label>transmute rhinoceros meat x75</label>
+    <description>Transmute anti-matter into rhinoceros meat.</description>
+    <jobString>Transmuting rhinoceros meat.</jobString>
+    <products>
+      <Meat_Rhinoceros>75</Meat_Rhinoceros>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatSheep</defName>
+    <label>transmute sheep meat x75</label>
+    <description>Transmute anti-matter into sheep meat.</description>
+    <jobString>Transmuting sheep meat.</jobString>
+    <products>
+      <Meat_Sheep>75</Meat_Sheep>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatSquirrel</defName>
+    <label>transmute squirrel meat x75</label>
+    <description>Transmute anti-matter into squirrel meat.</description>
+    <jobString>Transmuting squirrel meat.</jobString>
+    <products>
+      <Meat_Squirrel>75</Meat_Squirrel>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatThrumbo</defName>
+    <label>transmute thrumbo meat x75</label>
+    <description>Transmute anti-matter into thrumbo meat.</description>
+    <jobString>Transmuting thrumbo meat.</jobString>
+    <products>
+      <Meat_Thrumbo>75</Meat_Thrumbo>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatTurkey</defName>
+    <label>transmute turkey meat x75</label>
+    <description>Transmute anti-matter into turkey meat.</description>
+    <jobString>Transmuting turkey meat.</jobString>
+    <products>
+      <Meat_Turkey>75</Meat_Turkey>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_Venison</defName>
+    <label>transmute venison x75</label>
+    <description>Transmute anti-matter into venison.</description>
+    <jobString>Transmuting venison.</jobString>
+    <products>
+      <Meat_Deer>75</Meat_Deer>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatWarg</defName>
+    <label>transmute warg meat x75</label>
+    <description>Transmute anti-matter into warg meat.</description>
+    <jobString>Transmuting warg meat.</jobString>
+    <products>
+      <Meat_Warg>75</Meat_Warg>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatWolf</defName>
+    <label>transmute wolf meat x75</label>
+    <description>Transmute anti-matter into wolf meat.</description>
+    <jobString>Transmuting wolf meat.</jobString>
+    <products>
+      <Meat_Wolf_Timber>75</Meat_Wolf_Timber>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatYak</defName>
+    <label>transmute yak meat x75</label>
+    <description>Transmute anti-matter into yak meat.</description>
+    <jobString>Transmuting yak meat.</jobString>
+    <products>
+      <Meat_Yak>75</Meat_Yak>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_MeatYorkshire</defName>
+    <label>transmute yorkshire terrier meat x75</label>
+    <description>Transmute anti-matter into yorkshire terrier meat.</description>
+    <jobString>Transmuting yorkshire terrier meat.</jobString>
+    <products>
+      <Meat_YorkshireTerrier>75</Meat_YorkshireTerrier>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_EggChicken</defName>
+    <label>transmute chicken egg (unfert.) x75</label>
+    <description>Transmute anti-matter into chicken egg (unfert.).</description>
+    <jobString>Transmuting chicken egg (unfert.).</jobString>
+    <products>
+      <EggChickenUnfertilized>75</EggChickenUnfertilized>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_EggDuck</defName>
+    <label>transmute duck egg (unfert.) x75</label>
+    <description>Transmute anti-matter into duck egg (unfert.).</description>
+    <jobString>Transmuting duck egg (unfert.).</jobString>
+    <products>
+      <EggDuckUnfertilized>75</EggDuckUnfertilized>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_EggGoose</defName>
+    <label>transmute goose egg (unfert.) x75</label>
+    <description>Transmute anti-matter into goose egg (unfert.).</description>
+    <jobString>Transmuting goose egg (unfert.).</jobString>
+    <products>
+      <EggGooseUnfertilized>75</EggGooseUnfertilized>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_Milk</defName>
+    <label>transmute milk x75</label>
+    <description>Transmute anti-matter into milk.</description>
+    <jobString>Transmuting milk.</jobString>
+    <products>
+      <Milk>75</Milk>
+    </products>
+    <researchPrerequisite>TransmuteMeat</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_Jelly</defName>
+    <label>transmute insect jelly x75</label>
+    <description>Transmute anti-matter into insect jelly.</description>
+    <jobString>Transmuting insect jelly.</jobString>
+    <products>
+      <InsectJelly>75</InsectJelly>
+    </products>
+    <researchPrerequisite>TransmuteInsect</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_Kibble</defName>
+    <label>transmute kibble x75</label>
+    <description>Transmute anti-matter into kibble.</description>
+    <jobString>Transmuting kibble.</jobString>
+    <products>
+      <Kibble>75</Kibble>
+    </products>
+    <researchPrerequisite>TransmuteKibble</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_Pemmican</defName>
+    <label>transmute pemmican x75</label>
+    <description>Transmute anti-matter into pemmican.</description>
+    <jobString>Transmuting pemmican.</jobString>
+    <products>
+      <Pemmican>75</Pemmican>
+    </products>
+    <researchPrerequisite>TransmutePemmican</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookDarkBase">
+    <defName>Transmute_Simple</defName>
+    <label>transmute simple meal x10</label>
+    <description>Transmute anti-matter into simple meal.</description>
+    <jobString>Transmuting simple meal.</jobString>
+    <products>
+      <MealSimple>10</MealSimple>
+    </products>
+    <researchPrerequisite>TransmuteMeal</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookAntiBase">
+    <defName>Transmute_Fine</defName>
+    <label>transmute fine meal x10</label>
+    <description>Transmute anti-matter into fine meal.</description>
+    <jobString>Transmuting fine meal.</jobString>
+    <products>
+      <MealFine>10</MealFine>
+    </products>
+    <researchPrerequisite>TransmuteMeal</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookAntiBase">
+    <defName>Transmute_FineVeg</defName>
+    <label>transmute vegetarian fine meal x10</label>
+    <description>Transmute anti-matter into vegetarian fine meal.</description>
+    <jobString>Transmuting vegetarian fine meal.</jobString>
+    <products>
+      <MealFine_Veg>10</MealFine_Veg>
+    </products>
+    <researchPrerequisite>TransmuteMeal</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookAntiBase">
+    <defName>Transmute_FineMeat</defName>
+    <label>transmute carnivore fine meal x10</label>
+    <description>Transmute anti-matter into carnivore fine meal.</description>
+    <jobString>Transmuting carnivore fine meal.</jobString>
+    <products>
+      <MealFine_Meat>10</MealFine_Meat>
+    </products>
+    <researchPrerequisite>TransmuteMeal</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookAntiBase">
+    <defName>Transmute_Lavish</defName>
+    <label>transmute lavish meal x10</label>
+    <description>Transmute anti-matter into lavish meal.</description>
+    <jobString>Transmuting lavish meal.</jobString>
+    <products>
+      <MealLavish>10</MealLavish>
+    </products>
+    <researchPrerequisite>TransmuteLavish</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookAntiBase">
+    <defName>Transmute_LavishVeg</defName>
+    <label>transmute vegetarian lavish meal x10</label>
+    <description>Transmute anti-matter into vegetarian lavish meal.</description>
+    <jobString>Transmuting vegetarian lavish meal.</jobString>
+    <products>
+      <MealLavish_Veg>10</MealLavish_Veg>
+    </products>
+    <researchPrerequisite>TransmuteLavish</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookAntiBase">
+    <defName>Transmute_LavishMeat</defName>
+    <label>transmute carnivore lavish meal x10</label>
+    <description>Transmute anti-matter into carnivore lavish meal.</description>
+    <jobString>Transmuting carnivore lavish meal.</jobString>
+    <products>
+      <MealLavish_Meat>10</MealLavish_Meat>
+    </products>
+    <researchPrerequisite>TransmuteLavish</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="CookAntiBase">
+    <defName>Transmute_SurvivalMeal</defName>
+    <label>transmute packaged survival meal x10</label>
+    <description>Transmute anti-matter into packaged survival meal.</description>
+    <jobString>Transmuting packaged survival meal.</jobString>
+    <products>
+      <MealSurvivalPack>10</MealSurvivalPack>
+    </products>
+    <researchPrerequisite>TransmuteSurvival</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Cloth</defName>
+    <label>transmute cloth x75</label>
+    <description>Transmute anti-matter into cloth.</description>
+    <jobString>Transmuting cloth.</jobString>
+    <products>
+      <Cloth>75</Cloth>
+    </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Devilstrand</defName>
+    <label>transmute devilstrand x75</label>
+    <description>Transmute anti-matter into devilstrand.</description>
+    <jobString>Transmuting devilstrand.</jobString>
+    <products>
+      <DevilstrandCloth>75</DevilstrandCloth>
+    </products>
+    <researchPrerequisite>TransmutePlant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Hyperweave</defName>
+    <label>transmute hyperweave x75</label>
+    <description>Transmute anti-matter into hyperweave.</description>
+    <jobString>Transmuting hyperweave.</jobString>
+    <products>
+      <Hyperweave>75</Hyperweave>
+    </products>
+    <researchPrerequisite>TransmuteFabric</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Synthread</defName>
+    <label>transmute synthread x75</label>
+    <description>Transmute anti-matter into synthread.</description>
+    <jobString>Transmuting synthread.</jobString>
+    <products>
+      <Synthread>75</Synthread>
+    </products>
+    <researchPrerequisite>TransmuteFabric</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_WoolAlpaca</defName>
+    <label>transmute alpaca wool x100</label>
+    <description>Transmute anti-matter into alpaca wool.</description>
+    <jobString>Transmuting alpaca wool.</jobString>
+    <products>
+      <WoolAlpaca>100</WoolAlpaca>
+    </products>
+    <researchPrerequisite>TransmuteWool</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_WoolBison</defName>
+    <label>transmute bison wool x100</label>
+    <description>Transmute anti-matter into bison wool.</description>
+    <jobString>Transmuting bison wool.</jobString>
+    <products>
+      <WoolBison>100</WoolBison>
+    </products>
+      <researchPrerequisite>TransmuteWool</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_WoolMegasloth</defName>
+    <label>transmute megasloth wool x100</label>
+    <description>Transmute anti-matter into megasloth wool.</description>
+    <jobString>Transmuting megasloth wool.</jobString>
+    <products>
+      <WoolMegasloth>100</WoolMegasloth>
+    </products>
+    <researchPrerequisite>TransmuteWool</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_WoolMuffalo</defName>
+    <label>transmute muffalo wool x100</label>
+    <description>Transmute anti-matter into muffalo wool.</description>
+    <jobString>Transmuting muffalo wool.</jobString>
+    <products>
+      <WoolMuffalo>100</WoolMuffalo>
+    </products>
+    <researchPrerequisite>TransmuteWool</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_WoolSheep</defName>
+    <label>transmute sheep wool x100</label>
+    <description>Transmute anti-matter into sheep wool.</description>
+    <jobString>Transmuting sheep wool.</jobString>
+    <products>
+      <WoolSheep>100</WoolSheep>
+    </products>
+    <researchPrerequisite>TransmuteTextile</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Bearskin</defName>
+    <label>transmute bearskin x75</label>
+    <description>Transmute anti-matter into bearskin.</description>
+    <jobString>Transmuting bearskin.</jobString>
+    <products>
+      <Leather_Bear>75</Leather_Bear>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Birdskin</defName>
+    <label>transmute birdskin x75</label>
+    <description>Transmute anti-matter into birdskin.</description>
+    <jobString>Transmuting birdskin.</jobString>
+    <products>
+      <Leather_Bird>75</Leather_Bird>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Bluefur</defName>
+    <label>transmute bluefur x75</label>
+    <description>Transmute anti-matter into bluefur.</description>
+    <jobString>Transmuting bluefur.</jobString>
+    <products>
+      <Leather_Bluefur>75</Leather_Bluefur>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Camel</defName>
+    <label>transmute camelhide x75</label>
+    <description>Transmute anti-matter into camelhide.</description>
+    <jobString>Transmuting camelhide.</jobString>
+    <products>
+      <Leather_Camel>75</Leather_Camel>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Chinchilla</defName>
+    <label>transmute chinchilla fur x75</label>
+    <description>Transmute anti-matter into chincilla fur.</description>
+    <jobString>Transmuting chinchilla fur.</jobString>
+    <products>
+      <Leather_Chinchilla>75</Leather_Chinchilla>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Dog</defName>
+    <label>transmute dog leather x75</label>
+    <description>Transmute anti-matter into dog leather.</description>
+    <jobString>Transmuting dog leather.</jobString>
+    <products>
+      <Leather_Dog>75</Leather_Dog>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Elephant</defName>
+    <label>transmute elephant leather x75</label>
+    <description>Transmute anti-matter into elephant leather.</description>
+    <jobString>Transmuting elephant leather.</jobString>
+    <products>
+      <Leather_Elephant>75</Leather_Elephant>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Fox</defName>
+    <label>transmute foxfur x75</label>
+    <description>Transmute anti-matter into foxfur.</description>
+    <jobString>Transmuting foxfur.</jobString>
+    <products>
+      <Leather_Fox>75</Leather_Fox>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Guinea</defName>
+    <label>transmute guinea pig fur x75</label>
+    <description>Transmute anti-matter into guinea pig fur.</description>
+    <jobString>Transmuting guinea pig fur.</jobString>
+    <products>
+      <Leather_GuineaPig>75</Leather_GuineaPig>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Heavy</defName>
+    <label>transmute heavy fur x75</label>
+    <description>Transmute anti-matter into heavy fur.</description>
+    <jobString>Transmuting heavy fur.</jobString>
+    <products>
+      <Leather_Heavy>75</Leather_Heavy>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Human</defName>
+    <label>transmute human leather x75</label>
+    <description>Transmute anti-matter into human leather.</description>
+    <jobString>Transmuting human leather.</jobString>
+    <products>
+      <Leather_Human>75</Leather_Human>
+    </products>
+    <researchPrerequisite>TransmuteHuman</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Light</defName>
+    <label>transmute lightleather x75</label>
+    <description>Transmute anti-matter into lightleather.</description>
+    <jobString>Transmuting lightleather.</jobString>
+    <products>
+      <Leather_Light>75</Leather_Light>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Lizard</defName>
+    <label>transmute lizardskin x75</label>
+    <description>Transmute anti-matter into lizardskin.</description>
+    <jobString>Transmuting lizardskin.</jobString>
+    <products>
+      <Leather_Lizard>75</Leather_Lizard>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Panthera</defName>
+    <label>transmute panthera fur x75</label>
+    <description>Transmute anti-matter into panthera fur.</description>
+    <jobString>Transmuting panthera fur.</jobString>
+    <products>
+      <Leather_Panthera>75</Leather_Panthera>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Patch</defName>
+    <label>transmute patchleather x75</label>
+    <description>Transmute anti-matter into patchleather.</description>
+    <jobString>Transmuting patchleather.</jobString>
+    <products>
+      <Leather_Patch>75</Leather_Patch>
+    </products>
+    <researchPrerequisite>TransmuteTextile</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Pig</defName>
+    <label>transmute pigskin x75</label>
+    <description>Transmute anti-matter into pigskin.</description>
+    <jobString>Transmuting pigskin.</jobString>
+    <products>
+      <Leather_Pig>75</Leather_Pig>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Plain</defName>
+    <label>transmute plainleather x75</label>
+    <description>Transmute anti-matter into plainleather.</description>
+    <jobString>Transmuting plainleather.</jobString>
+    <products>
+      <Leather_Plain>75</Leather_Plain>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Rhinoceros</defName>
+    <label>transmute rhinoceros leather x75</label>
+    <description>Transmute anti-matter into rhinoceros leather.</description>
+    <jobString>Transmuting rhinoceros leather.</jobString>
+    <products>
+      <Leather_Rhinoceros>75</Leather_Rhinoceros>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Thrumbo</defName>
+    <label>transmute thrumbofur x75</label>
+    <description>Transmute anti-matter into thrumbofur.</description>
+    <jobString>Transmuting thrumbofur.</jobString>
+    <products>
+      <Leather_Thrumbo>75</Leather_Thrumbo>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteDarkBase">
+    <defName>Transmute_Wolf</defName>
+    <label>transmute wolfskin x75</label>
+    <description>Transmute anti-matter into wolfskin.</description>
+    <jobString>Transmuting wolfskin.</jobString>
+    <products>
+      <Leather_Wolf>75</Leather_Wolf>
+    </products>
+    <researchPrerequisite>TransmuteLeather</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Animals</defName>
+    <label>transmute skilltrainer (animals) x1</label>
+    <description>Transmute anti-matter into skilltrainer (animals).</description>
+    <jobString>Transmuting skilltrainer (animals).</jobString>
+    <products>
+      <Neurotrainer_Animals>1</Neurotrainer_Animals>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Artistic</defName>
+    <label>transmute skilltrainer (artistic) x1</label>
+    <description>Transmute anti-matter into skilltrainer (artistic).</description>
+    <jobString>Transmuting skilltrainer (artistic).</jobString>
+    <products>
+      <Neurotrainer_Artistic>1</Neurotrainer_Artistic>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Construction</defName>
+    <label>transmute skilltrainer (construction) x1</label>
+    <description>Transmute anti-matter into skilltrainer (construction).</description>
+    <jobString>Transmuting skilltrainer (construction).</jobString>
+    <products>
+      <Neurotrainer_Construction>1</Neurotrainer_Construction>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Cooking</defName>
+    <label>transmute skilltrainer (cooking) x1</label>
+    <description>Transmute anti-matter into skilltrainer (cooking).</description>
+    <jobString>Transmuting skilltrainer (cooking).</jobString>
+    <products>
+      <Neurotrainer_Cooking>1</Neurotrainer_Cooking>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Crafting</defName>
+    <label>transmute skilltrainer (crafting) x1</label>
+    <description>Transmute anti-matter into skilltrainer (crafting).</description>
+    <jobString>Transmuting skilltrainer (crafting).</jobString>
+    <products>
+      <Neurotrainer_Crafting>1</Neurotrainer_Crafting>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Intellectual</defName>
+    <label>transmute skilltrainer (intellectual) x1</label>
+    <description>Transmute anti-matter into skilltrainer (intellectual).</description>
+    <jobString>Transmuting skilltrainer (intellectual).</jobString>
+    <products>
+      <Neurotrainer_Intellectual>1</Neurotrainer_Intellectual>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Medical</defName>
+    <label>transmute skilltrainer (medical) x1</label>
+    <description>Transmute anti-matter into skilltrainer (medical).</description>
+    <jobString>Transmuting skilltrainer (medical).</jobString>
+    <products>
+      <Neurotrainer_Medicine>1</Neurotrainer_Medicine>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Melee</defName>
+    <label>transmute skilltrainer (melee) x1</label>
+    <description>Transmute anti-matter into skilltrainer (melee).</description>
+    <jobString>Transmuting skilltrainer (melee).</jobString>
+    <products>
+      <Neurotrainer_Melee>1</Neurotrainer_Melee>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Mining</defName>
+    <label>transmute skilltrainer (mining) x1</label>
+    <description>Transmute anti-matter into skilltrainer (mining).</description>
+    <jobString>Transmuting skilltrainer (mining).</jobString>
+    <products>
+      <Neurotrainer_Mining>1</Neurotrainer_Mining>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Plants</defName>
+    <label>transmute skilltrainer (plants) x1</label>
+    <description>Transmute anti-matter into skilltrainer (plants).</description>
+    <jobString>Transmuting skilltrainer (plants).</jobString>
+    <products>
+      <Neurotrainer_Plants>1</Neurotrainer_Plants>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Shooting</defName>
+    <label>transmute skilltrainer (shooting) x1</label>
+    <description>Transmute anti-matter into skilltrainer (shooting).</description>
+    <jobString>Transmuting skilltrainer (shooting).</jobString>
+    <products>
+      <Neurotrainer_Shooting>1</Neurotrainer_Shooting>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Social</defName>
+    <label>transmute skilltrainer (social) x1</label>
+    <description>Transmute anti-matter into skilltrainer (social).</description>
+    <jobString>Transmuting skilltrainer (social).</jobString>
+    <products>
+      <Neurotrainer_Social>1</Neurotrainer_Social>
+    </products>
+    <researchPrerequisite>TransmuteSkilltrainer</researchPrerequisite>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Techprof</defName>
+    <label>transmute techprof subpersona core x1</label>
+    <description>Transmute anti-matter into techprof subpersona core.</description>
+    <jobString>Transmuting techprof subpersona core.</jobString>
+    <products>
+      <TechprofSubpersonaCore>1</TechprofSubpersonaCore>
+    </products>
+    <researchPrerequisite>TransmuteExotic</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_AnimalPulser</defName>
+    <label>transmute psychic animal pulser x1</label>
+    <description>Transmute anti-matter into psychic animal pulser.</description>
+    <jobString>Transmuting psychic animal pulser.</jobString>
+    <products>
+      <PsychicAnimalPulser>1</PsychicAnimalPulser>
+    </products>
+    <researchPrerequisite>TransmutePsychic</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Emanator</defName>
+    <label>transmute psychic emanator x1</label>
+    <description>Transmute anti-matter into psychic emanator.</description>
+    <jobString>Transmuting psychic emanator.</jobString>
+    <products>
+      <PsychicEmanator>1</PsychicEmanator>
+    </products>
+    <researchPrerequisite>TransmutePsychic</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Harmonizer</defName>
+    <label>transmute psychic harmonizer x1</label>
+    <description>Transmute anti-matter into psychic harmonizer.</description>
+    <jobString>Transmuting psychic harmonizer.</jobString>
+    <products>
+      <PsychicHarmonizer>1</PsychicHarmonizer>
+    </products>
+    <researchPrerequisite>TransmutePsychic</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Reader</defName>
+    <label>transmute psychic reader x1</label>
+    <description>Transmute anti-matter into psychic reader.</description>
+    <jobString>Transmuting psychic reader.</jobString>
+    <products>
+      <PsychicReader>1</PsychicReader>
+    </products>
+    <researchPrerequisite>TransmutePsychic</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Sensitizer</defName>
+    <label>transmute psychic sensitizer x1</label>
+    <description>Transmute anti-matter into psychic sensitizer.</description>
+    <jobString>Transmuting psychic sensitizer.</jobString>
+    <products>
+      <PsychicSensitizer>1</PsychicSensitizer>
+    </products>
+    <researchPrerequisite>TransmutePsychic</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_SoothePulser</defName>
+    <label>transmute psychic soothe pulser x1</label>
+    <description>Transmute anti-matter into psychic soothe pulser.</description>
+    <jobString>Transmuting psychic soothe pulser.</jobString>
+    <products>
+      <PsychicSoothePulser>1</PsychicSoothePulser>
+    </products>
+    <researchPrerequisite>TransmutePsychic</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Neuroformer</defName>
+    <label>transmute psylink neuroformer x1</label>
+    <description>Transmute anti-matter into psylink neuroformer.</description>
+    <jobString>Transmuting psylink neuroformer.</jobString>
+    <products>
+      <PsychicAmplifier>1</PsychicAmplifier>
+    </products>
+    <researchPrerequisite>TransmutePsychic</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_ArchotechArm</defName>
+    <label>transmute archotech arm x1</label>
+    <description>Transmute anti-matter into archotech arm.</description>
+    <jobString>Transmuting archotech arm.</jobString>
+    <products>
+      <ArchotechArm>1</ArchotechArm>
+    </products>
+    <researchPrerequisite>TransmuteImplant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_ArchotechEye</defName>
+    <label>transmute archotech eye x1</label>
+    <description>Transmute anti-matter into archotech eye.</description>
+    <jobString>Transmuting archotech eye.</jobString>
+    <products>
+      <ArchotechEye>1</ArchotechEye>
+    </products>
+    <researchPrerequisite>TransmuteImplant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_ArchotechLeg</defName>
+    <label>transmute archotech leg x1</label>
+    <description>Transmute anti-matter into archotech leg.</description>
+    <jobString>Transmuting archotech leg.</jobString>
+    <products>
+      <ArchotechLeg>1</ArchotechLeg>
+    </products>
+    <researchPrerequisite>TransmuteImplant</researchPrerequisite>
+  </RecipeDef>
+
+  <RecipeDef ParentName="TransmuteAntiBase">
+    <defName>Transmute_Neurocalculator</defName>
+    <label>transmute neurocalculator x1</label>
+    <description>Transmute anti-matter into neurocalculator.</description>
+    <jobString>Transmuting neurocalculator.</jobString>
+    <products>
+      <Neurocalculator>1</Neurocalculator>
+    </products>
+    <researchPrerequisite>TransmuteImplant</researchPrerequisite>
+  </RecipeDef>
+      
+  <RecipeDef>
+    <defName>Transmute_InvestigateDarkMatter</defName>
+    <label>experiment with dark matter</label>
+    <description>Learn more about dark matter's properties from experimenting.</description>
+    <jobString>Experimenting with dark matter.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>300</workAmount>
+    <recipeUsers>
+      <li>TableTransmutation</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>DarkMatter</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DarkMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Techprint_DarkmatterAlchemy>1</Techprint_DarkmatterAlchemy>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Transmute_InvestigateAntiMatter</defName>
+    <label>experiment with anti-matter</label>
+    <description>Learn more about anti-matter's properties from experimenting.</description>
+    <jobString>Experimenting with anti-matter.</jobString>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <effectWorking>Cremate</effectWorking>
+    <soundWorking>Recipe_Cremate</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <workAmount>1200</workAmount>
+    <recipeUsers>
+      <li>TableDarkMatter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>AntiMatter</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>DarkMatter</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <Techprint_AntimatterAlchemy>1</Techprint_AntimatterAlchemy>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+</Defs>

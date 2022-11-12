@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <WorkGiverDef>
+    <defName>DoBillsTransmutation</defName>
+    <label>transmutate materials</label>
+    <giverClass>WorkGiver_DoBill</giverClass>
+    <workType>Crafting</workType>
+    <priorityInType>99</priorityInType>
+    <fixedBillGiverDefs>
+      <li>TableTransmutation</li>
+      <li>TableDarkMatter</li>
+      <li>TableAntiMatter</li>
+      <li>StoveDarkMatter</li>
+    </fixedBillGiverDefs>
+    <verb>transmutate</verb>
+    <gerund>transmutating materials at</gerund>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+    <prioritizeSustains>true</prioritizeSustains>
+  </WorkGiverDef>
+</Defs>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Nonequivalent Exchange for Vanilla Psycasts Expanded</name>
+	<author>ShadowSWilliam</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld</packageId>
+			<displayName>Core</displayName>
+		</li>
+		<li>
+			<packageId>Ludeon.RimWorld.Royalty</packageId>
+			<displayName>Royalty</displayName>
+		</li>
+	</modDependencies>
+	<packageId>shadowswilliam.nonequivalentexchangeVPE</packageId>
+  <loadAfter>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>Arquebus.MorePersonaTraits</li>
+    <li>shadowswilliam.syringes</li>
+  </loadAfter>
+	<description>This mod aims to add a cheaty version of alchemy that allows you to transmute items into other items at a transmutation table.
+It was inspired by OverPowered Gaming and Nanotech Overpower, but both had features I wasn't looking for, so I decided to make my own flavour of it.
+
+You can run this mod even if you don't plan on using it - in order to start transmuting items, you need to get a techprint and research alchemy. This techprint isn't sold anywhere and can only be spawned in using dev mode, or using the included scenario.(It goes without saying that you can also edit any scenario to start with it.)
+Thanks to the research, you could also make a scenario where you start with a Transmutation Table and no ability to create a new one. That way, if you lose it from a raid or event, you lose the ability to transmute materials.
+Being inspired by ProjectE, this mod uses dark matter and anti-matter as materials for transmutation. You can also fuse the matters to technology to improve them, such as the dark matter relay, a very strong battery.
+
+Dubs Mint Menus STRONGLY recommended for the Bills menu!</description>
+</ModMetaData>
